@@ -1,3 +1,4 @@
+print("🔥 SCRIPT STARTED")
 import feedparser
 import requests
 import os
@@ -76,3 +77,4 @@ else:
     print("NO MATCHING JOBS FOUND")
 
 save_seen(seen)
+print("🔥 SCRIPT FINISHED")
