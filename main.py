@@ -11,17 +11,70 @@ print("BOT_TOKEN LOADED:", bool(BOT_TOKEN))
 print("CHAT_ID LOADED:", bool(CHAT_ID))
 
 KEYWORDS = [
-    "SAP MM",
-    "SAP S/4HANA",
-    "SAP Consultant",
-    "SAP Procurement",
-    "SAP FI",
-    "SAP SD",
+          # 🧠 AI / LLM / ML
+    "ai",
+    "artificial intelligence",
+    "machine learning",
+    "deep learning",
+    "llm",
+    "large language model",
+    "gpt",
+    "openai",
+    "chatgpt",
+    "claude",
+    "gemini",
+    "anthropic",
+    "microsoft copilot",
+    "google ai",
+    "meta ai",
+
+    # ⚙️ SAP / ERP
+    "sap",
+    "s/4hana",
+    "s4hana",
+    "sap fi",
+    "sap mm",
+    "sap sd",
+    "sap abap",
+    "abap",
+    "fico",
+    "sap erp",
+    "erp",
+    "sap consultant",
+    "sap transformation",
+    "sap migration",
+    "rise with sap",
+
+    # ☁️ Enterprise / Cloud / Dev
+    "cloud",
+    "azure",
+    "aws",
+    "google cloud",
+    "kubernetes",
+    "microservices",
+    "devops",
+    "data engineering",
+    "data platform",
+    "enterprise software",
+    "digital transformation",
+    "automation"
 ]
 
 FEEDS = [
-    "https://remoteok.com/remote-sap-jobs.rss",
-    "https://weworkremotely.com/categories/remote-programming-jobs.rss",
+    # 🧠 AI & Machine Learning
+    "https://techcrunch.com/tag/artificial-intelligence/feed/",
+    "https://venturebeat.com/category/ai/feed/",
+    "https://www.theverge.com/artificial-intelligence/rss/index.xml",
+
+    # 🧠 Google AI News (güçlü genel AI feed)
+    "https://news.google.com/rss/search?q=artificial+intelligence+OR+LLM+OR+GPT+OR+machine+learning&hl=en-US&gl=US&ceid=US:en",
+
+    # 💼 SAP & Enterprise Systems
+    "https://news.google.com/rss/search?q=SAP+S%2F4HANA+OR+SAP+FI+OR+SAP+MM+OR+SAP+SD&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=ERP+transformation+OR+enterprise+software+OR+SAP+consultant&hl=en-US&gl=US&ceid=US:en",
+
+    # ⚙️ General enterprise tech (Microsoft, Google, cloud, etc.)
+    "https://news.google.com/rss/search?q=cloud+computing+OR+Azure+OR+AWS+OR+Google+Cloud+enterprise&hl=en-US&gl=US&ceid=US:en"
 ]
 
 STATE_FILE = "seen.json"
