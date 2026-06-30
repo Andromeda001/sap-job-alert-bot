@@ -130,4 +130,5 @@ else:
     print("NO MATCHING JOBS FOUND")
 
 save_seen(seen)
+send("✅ Test: Workflow başarıyla çalıştı.")
 print("🔥 SCRIPT FINISHED")
