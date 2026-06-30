@@ -124,10 +124,19 @@ for feed_url in FEEDS:
 
 print("TOTAL NEW JOBS:", len(new_jobs))
 
+MAX_NEWS = 10
+
 if new_jobs:
-    send("🔥 SAP Job Alert\n\n" + "\n\n".join(new_jobs))
+    message = (
+        f"🤖 AI & SAP Daily Update\n"
+        f"Toplam eşleşme: {len(new_jobs)}\n"
+        f"İlk {min(MAX_NEWS, len(new_jobs))} haber:\n\n"
+        + "\n\n".join(new_jobs[:MAX_NEWS])
+    )
+    send(message)
 else:
-    print("NO MATCHING JOBS FOUND")
+    print("NO MATCHING NEWS FOUND")
+          
 
 save_seen(seen)
 send("✅ Test: Workflow başarıyla çalıştı.")
